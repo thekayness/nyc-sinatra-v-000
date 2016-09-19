@@ -1,0 +1,17 @@
+<h1>Edit an existing Landmark</h1>
+
+<form action="/landmarks/<%=@landmark.id%>" method="POST">
+  <h2>Original name: <%=@landmark.name%></h2>
+  <label>Edit name:</label>
+  <input type="text" name="landmark[name]" id="name"/>
+
+  <br></br>
+
+  <br></br>
+  <h2>Original year completed: <%=@landmark.year_completed%></h2>
+  <label>Edit year completed: </label>
+  <input type="text" name="landmark[year_completed]" id="year_completed"/>
+
+  <br></br>
+  <input type="submit" value="Edit Landmark">
+</form>
